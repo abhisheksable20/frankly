@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.bottomnavupload.imageupload.SelectedImageFragment"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/selected_image_fragment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/toolbar_color"
+            app:navigationIcon="@drawable/back_navigation_icon"
+            app:title="@string/post_preview"
+            app:titleTextColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/selected_image_fragment_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:maxHeight="300dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:background="@color/card_view_color_on_top_of_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="@string/description"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/card_view_color_on_top_of_background"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/selected_image_fragment_description_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:backgroundTint="@color/card_view_color_on_top_of_background"
+                android:gravity="top|start"
+                android:textSize="15sp"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:textCursorDrawable="@color/touch_background_color"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:hint="@string/write_something_about_post"
+                android:textColorHint="@color/touch_background_color"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="@string/add_connections"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/touch_background_color"
+            android:textStyle="bold"
+            android:text="@string/coonect_your_post_with_sakesnake_users"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/card_view_color_on_top_of_background">
+
+            <AutoCompleteTextView
+                android:id="@+id/selected_fragment_upload_get_connected_username_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/card_view_color_on_top_of_background"
+                android:completionThreshold="1"
+                android:gravity="center|start"
+                android:textStyle="bold"
+                android:inputType="text"
+                android:minLines="1"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@color/touch_background_color"
+                android:textSize="15sp"
+                android:hint="@string/hint_user_name"
+                android:textColorHint="@color/touch_background_color"/>
+
+            <ProgressBar
+                android:id="@+id/selected_image_fragment_connected_users_progress_bar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="5dp"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:indeterminateTint="@color/upload_logo_color"/>
+
+            <ProgressBar
+                android:id="@+id/selected_image_fragment_progress_bar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="5dp"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:indeterminateTint="@color/upload_logo_color"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/card_view_color_on_top_of_background"
+            app:cardCornerRadius="8dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/selected_image_fragment_connected_users_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/selected_fragment_connect_user_message_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/connnected_users_will_appear_here"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/location"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/touch_background_color"
+            android:textSize="15sp"
+            android:text="@string/from_where_you_are_posting_this_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="@color/card_view_color_on_top_of_background"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="8dp">
+
+            <EditText
+                android:id="@+id/selected_image_fragment_content_location_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/card_view_color_on_top_of_background"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:inputType="text"
+                android:minLines="1"
+                android:textCursorDrawable="@color/touch_background_color"
+                android:gravity="center|start"
+                android:hint="@string/location"
+                android:textColorHint="@color/touch_background_color"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/image_memes_upload_show_post_preview_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/empty_photo_background_color"
+            android:textColor="@color/black"
+            android:text="@string/show_post_preview"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <Button
+                android:id="@+id/selected_image_fragment_upload_to_parse_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:backgroundTint="@color/upload_logo_color"
+                android:textColor="@color/white"
+                android:text="@string/upload_bottom_nav"/>
+
+            <ProgressBar
+                android:id="@+id/selected_image_fragment_uploading_to_parse_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:indeterminateTint="@color/upload_logo_color"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

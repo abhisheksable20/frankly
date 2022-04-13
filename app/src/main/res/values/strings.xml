@@ -1,0 +1,393 @@
+<resources>
+    <string name="slogan_app">CREATED FOR YOU</string>
+    <string name="app_name">Frankly</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="welcome_to_the">Welcome to the</string>
+    <string name="Sakesnake">Sakesnake</string>
+    <string name="social_media">social media</string>
+    <string name="already_have_account">Already have an account</string>
+    <string name="continue_with_email">Continue with email</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="user">user</string>
+    <string name="user_id_login">username</string>
+    <string name="password_login">password</string>
+    <string name="forget_password">forget password?</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="plus_sign">+</string>
+    <string name="email_verification">You\'ll have to verify this email later.</string>
+    <string name="check_terms_and_policy">Before continue, please check our Terms and Privacy Policy.</string>
+    <string name="enter_user_name">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="hint_user_name">Username</string>
+    <string name="confirm_password">Confirm your password</string>
+    <string name="its_verified_account">-- IT\'S ORIGINAL --</string>
+    <string name="password_tip">Tip: to make your account more secure use special character like \"@,#,$\" etc in you password. </string>
+    <string name="try_again">try again</string>
+    <string name="this_username_is_not_available">This username is not available</string>
+    <string name="write_something_here">Write something here…</string>
+    <string name="user_profile_uploads">Uploads</string>
+    <string name="no_internet_warning">Please check your internet connection.</string>
+    <string name="posting_comment_message">Posting your comment…</string>
+    <string name="comment_posted_successfully">Successfully posted your comment.</string>
+    <string name="comment_post_failed">Failed to post your comment.</string>
+
+    <string name="remove_user">Remove</string>
+
+    <!-- Your original name fragment -->
+    <string name="get_original_name">Enter your name</string>
+    <string name="get_original_name_hint">Your name</string>
+    <string name="account_created_message">your account was verified successfully. Now let\'s do some basic setup.</string>
+    <string name="go_back_to_login_screen">Logout Me</string>
+    <string name="logging_out_user_text">Logging out</string>
+
+    <!-- forget password fragment-->
+    <string name="forget_password_toolbar_title">Forget password</string>
+    <string name="enter_your_registered_email">Enter your email</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="enter_registered_email_message">A link will be sent on your registered email address from that you can reset your password.</string>
+    <string name="reset_password">Reset password</string>
+    <string name="reset_password_hint">Your email</string>
+    <string name="reset_password_using_username_hint">Your username</string>
+    <string name="reset_using_email">Reset using e-mail</string>
+    <string name="reset_using_username">Reset using username</string>
+
+    <!-- Bottom navigation titles-->
+    <string name="home_bottom_nav">Home</string>
+    <string name="search_bottom_nav">Search</string>
+    <string name="upload_bottom_nav">Upload</string>
+    <string name="profile_bottom_nav">Profile</string>
+
+    <string name="smart_search">Smart Search</string>
+
+
+    <!-- Users uploaded content strings (Applying in all the fragment) -->
+    <string name="add_user_to_watchlist">Add user to watchlist +</string>
+    <string name="user_post_more_details">More Details</string>
+    <string name="writing_upload_content_total_words">Total words \u2022</string>
+    <string name="writing_upload_content_keywords">Keywords \u2022 </string>
+    <string name="is_dream_matching">Is it matching?</string>
+    <string name="more_options_toolbar_menu">More options</string>
+    <string name="posted_timing">Posted \u2022 %1$s</string>
+    <string name="question_heading">Question?</string>
+    <string name="answers_heading">Answers</string>
+    <string name="author">- %1$s</string>
+    <string name="question_main_content">Q \u2022 %1$s</string>
+    <string name="share_post">Share</string>
+    <string name="number_to_string">%1$d</string>
+    <string name="prefix_zero_before_num">0%1$d</string>
+    <string name="number_to_string_comment">%1$d \u2022 comments</string>
+    <string name="number_to_string_answers_singular">%1$d \u2022 Answer</string>
+    <string name="number_to_string_answers_plural">%1$d \u2022 Answers</string>
+    <string name="delete_my_post">Delete Post</string>
+    <string name="delete_post">Delete</string>
+
+
+    <!-- Content upload message (Their work) -->
+    <string name="image_upload_message">Share your best moments images with all other users.</string>
+    <string name="blog_upload_message">Become a blogger in a few simple steps and start sharing your knowledge.</string>
+    <string name="dream_upload_message">If you have a dream last night then share with other users and check if they have similar dreams like you.</string>
+    <string name="quotes_upload_message">You can motivate other users with your quotes and thoughts.</string>
+    <string name="news_upload_message">If you have any news or updates then share with other users.</string>
+    <string name="memes_upload_message">Put a smile on other users face. Share memes.</string>
+    <string name="story_upload_message">Become a story writer and write a story.</string>
+    <string name="poem_upload_message">Become a poet and start writing poems.</string>
+    <string name="need_help_upload_message">Are you in some trouble. Ask other users for help.</string>
+    <string name="question_upload_message">Have any doubt. Don\'t keep in your mind, ask users to solve it.</string>
+    <string name="ideas_upload_message">Share your ideas with other users.</string>
+    <string name="invitation_upload_message">Invite users in your function easily.</string>
+
+
+    <!-- Home fragment strings -->
+    <string name="hii_greeting_home_fragment">Hii,</string>
+    <string name="people_you_like_have_something_for_you">People you watch have something for you.</string>
+    <string name="there_images_home_fragment">Images</string>
+    <string name="quotes_and_thought_home_fragment">Quotes &amp; Thoughts</string>
+    <string name="blog_home_fragment">Blog</string>
+    <string name="memes_and_comedy_home_fragment">Memes &amp; Comedy</string>
+    <string name="ideas_home_fragment">Ideas</string>
+    <string name="news_and_updates_home_fragment">News &amp; Updates</string>
+    <string name="dreams_home_fragment">Dreams</string>
+    <string name="check_is_your_dreams_matching_with_them">Check is your dreams matching with them.</string>
+    <string name="people_nearby_you_home_fragment">People nearby you</string>
+    <string name="stories_home_fragment">Stories</string>
+    <string name="poems_home_fragment">Poems</string>
+    <string name="answer_there_question">Answer there Question</string>
+    <string name="need_help">Need Help!</string>
+    <string name="no_content_placeholder">Start Sharing</string>
+    <string name="greet_user_with_username">Hii,%1$s</string>
+    <string name="watchlist_add_home">Watchlist +</string>
+    <string name="show_more_content">Show more</string>
+
+
+    <string name="search_profile">Search profile &amp; more</string>
+    <string name="select_any_one_from_below">Select any one from below.</string>
+
+    <!-- Upload fragment strings-->
+    <string name="post_an_image_upload_fragment">Post an Image</string>
+    <string name="write_a_blog_upload_fragment">Write a Blog</string>
+    <string name="narrate_a_story_upload_fragment">Narrate a Story</string>
+    <string name="i_need_help_upload_fragment">I Need Help</string>
+    <string name="tell_quotes_and_thoughts_upload_fragment">Tell Quotes &amp; Thoughts</string>
+    <string name="ask_a_question_upload_fragment">Give a Question</string>
+    <string name="saw_a_dream_today_upload_fragment">Had a Dream Today</string>
+    <string name="write_poetry_upload_fragment">Write Poetry</string>
+    <string name="motivate_people_upload_fragment">Motivate People</string>
+    <string name="session_expired_message">Session expired! Please login again</string>
+
+
+    <!-- Search fragment Strings-->
+    <string name="search_fragment_search">Search</string>
+    <string name="smart_search_coordinates">Coordinates</string>
+    <string name="smart_search_search_user">Search Users</string>
+    <string name="smart_search_what_is_smart_search">What is smart search?</string>
+    <string name="smart_search_start_coordinates">Start Coordinates</string>
+    <string name="smart_search_end_coordinates">End Coordinates</string>
+    <string name="smart_search_users">Users</string>
+    <string name="search_question_question_icon">Q:-</string>
+    <string name="search_frag_peoples_blog">People\'s\nBlog</string>
+    <string name="search_frag_quotes_and_thoughts">Quotes\n&amp;\nThoughts</string>
+    <string name="search_frag_news_and_updates">News\n&amp;\nUpdates</string>
+    <string name="search_frag_memes_and_comedy">Memes\n&amp;\nComedy</string>
+    <string name="search_frag_help_peoples">Help\nPeoples</string>
+    <string name="search_frag_answer_the_question">Answer\nThe\nQuestion</string>
+    <string name="search_frag_frankly_best">Frankly\'s\nBest</string>
+    <string name="search_frag_motivate_yourself">Motivate\nYourself</string>
+    <string name="search_frag_top_profile">Top Profiles</string>
+    <string name="search_frag_recent_searches">Recent searches</string>
+
+
+    <!-- Profile fragment strings-->
+    <string name="likes_profile_fragment">Likes</string>
+    <string name="liked_profile_fragment">Liked</string>
+    <string name="crush_profile_fragment">Crush</string>
+    <string name="gifts_profile_fragment">Gifts</string>
+    <string name="my_crush_profile_fragment">My Crush</string>
+    <string name="lets_play_profile_fragment">Let\'s Play</string>
+    <string name="my_uploads_profile_fragment">My Uploads</string>
+    <string name="edit_my_profile">Edit Profile</string>
+    <string name="my_watchers">Watchers</string>
+    <string name="my_watch_list">Watching</string>
+    <string name="my_likes">Likes</string>
+    <string name="my_liked_profile">Liked Profile</string>
+    <string name="my_uploads">My Uploads</string>
+
+
+    <string name="profile_default">Default</string>
+    <string name="change_profile_img">Change</string>
+    <string name="remove_profile_img">Remove</string>
+
+    <!-- User Profile fragment -->
+    <string name="user_gifts">Gifts</string>
+    <string name="user_invitations">Invitations</string>
+    <string name="user_interests">Interest</string>
+
+
+    <!-- Profile settings fragment-->
+    <string name="profile_settings_fragment_accounts">Account</string>
+    <string name="profile_settings_fragment_security">Security</string>
+    <string name="profile_settings_fragment_sakesnake">Sakesnake</string>
+    <string name="profile_settings_fragment_delete_account">Delete account</string>
+    <string name="profile_settings_fragment_logout">Log out</string>
+    <string name="delete_account_msg">Remember, If you delete your account everything related to your account (posts, email, username etc) will be removed permanently and you will not be able to recover your account later.</string>
+    <string name="reason_heading">Reason</string>
+    <string name="reason_explain">Why are you leaving us ?</string>
+    <string name="delete_reason_hint">your reason here…</string>
+    <string name="delete_account_permanently">Delete account permanently</string>
+
+    <!--    Account settings strings-->
+    <string name="profile_settings_edit_profile">Edit profile</string>
+    <string name="account_settings_modify_banner">Modify Banner</string>
+    <string name="account_settings_modify_profile_photo">Modify Profile Photo</string>
+    <string name="account_settings_name">Name</string>
+    <string name="account_settings_save">Save changes</string>
+    <string name="saving_changes">Saving…</string>
+    <string name="account_settings_save_and_logout_all_active_session">Save &amp; logout all active session</string>
+    <string name="account_settings_full_name">Full Name</string>
+    <string name="account_settings_type_of_account">Type of account</string>
+    <string name="account_settings_upload_document">Upload document</string>
+    <string name="account_settings_your_full_name_hint">Your full name</string>
+    <string name="account_settings_send">Send</string>
+    <string name="unknown_device">Unknown Device</string>
+    <string name="current_session">Currently active session</string>
+    <string name="bug_where">Where</string>
+    <string name="bug_message">Message</string>
+    <string name="bug_msg_hint">your message here…</string>
+    <string name="bug_location_hint">bug location</string>
+    <string name="where_bug_msg">Where you find this bug</string>
+    <string name="bug_report_msg">If you notice any bug or error inside this application then please feel free share with us so we can take immediate action on it.</string>
+
+
+    <!--    Security settings strings-->
+    <string name="profile_settings_change_password">Change password</string>
+    <string name="profile_settings_currently_active_sessions">Currently active sessions</string>
+    <string name="security_settings_current_password">Current password</string>
+    <string name="security_settings_new_password">New password</string>
+    <string name="security_settings_confirm_password">Confirm password</string>
+    <string name="security_settings_or">Or</string>
+    <string name="security_settings_storage_permission">Storage permission</string>
+    <string name="security_settings_location_permission">Location permission</string>
+    <string name="deleting_account">Deleting…</string>
+
+    <!--    Sakesnake settings strings-->
+    <string name="profile_settings_give_suggestions">Give suggestions</string>
+    <string name="profile_settings_report_a_bug">Report a bug</string>
+    <string name="report_bug">Report</string>
+    <string name="reporting_bug">Sending…</string>
+    <string name="profile_settings_privacy_policy">Privacy policy</string>
+    <string name="app_terms_and_condition">Terms of Services</string>
+
+
+    <!-- My Uploads Fragment strings-->
+    <string name="my_images_my_uploads">Images</string> <!-- Done-->
+    <string name="my_blog_my_uploads">Blog\'s</string> <!-- Done-->
+    <string name="my_story_my_uploads">Stories</string> <!-- Done-->
+    <string name="my_quotes_thoughts_my_uploads">Quotes &amp; Thoughts</string> <!-- Done-->
+    <string name="my_asked_question_my_uploads">Give a Question</string> <!-- Done-->
+    <string name="my_dreams_my_uploads">Dreams</string> <!-- Done-->
+    <string name="my_poem_my_uploads">Poems</string> <!-- Done-->
+    <string name="my_news_and_updates_my_uploads">News &amp; Updates</string> <!-- Done-->
+    <string name="my_memes_and_comedy_my_uploads">Memes &amp; Comedy</string> <!-- Done-->
+    <string name="my_ideas_my_uploads">Ideas</string> <!-- Done-->
+    <string name="my_give_invitations">Give Invitations</string>
+
+
+    <!-- Show Device Images String-->
+    <string name="pick_an_image">Pick An Image</string>
+    <string name="loading_images_from_device">Loading Images from your Device. Please wait…</string>
+    <string name="no_image_available">No Image Available</string>
+    <string name="allow_storage_permission_message">Allow Storage Permission</string>
+    <string name="allow_permission">Allow</string>
+    <string name="cancel_permission">Cancel</string>
+    <string name="post_preview">Post Preview</string>
+    <string name="description">Description</string>
+    <string name="write_something_about_post">Write something about your post…</string>
+    <string name="add_connections">Add Connections</string>
+    <string name="coonect_your_post_with_sakesnake_users">Connect your post with Sakesnake users</string>
+    <string name="connnected_users_will_appear_here">Connected users will appear here</string>
+    <string name="location">Location</string>
+    <string name="done_multi_image">Done</string>
+    <string name="select_images_up_to_five">You can select up to five images from below.</string>
+    <string name="from_where_you_are_posting_this_content">From where you are posting this content</string>
+    <string name="storage_permission_message">By allowing this permission you will able to see your gallery Images here which then you can upload or share with any Sakesnake user. You can revoke this permission any time from your settings. </string>
+    <string name="connected_users">Connected Users</string>
+
+    <!-- Full feeds fragment -->
+    <string name="question">Question</string>
+
+    <!-- post comments fragment -->
+    <string name="post_comment_toolbar_title">Comments</string>
+    <string name="enter_comment_hint">Post your comment…</string>
+    <string name="enter_answer_hint">Post your answer…</string>
+
+    <string name="post_delete_message">Remember, If you delete this post all comments and post likes related to these post will be removed. Post cannot be recover later.</string>
+
+    <!-- Writing feed fragment -->
+    <string name="no_images_found_message">No images found.</string>
+    <string name="no_memes_found_message">No memes found.</string>
+    <string name="no_quotes_found_message">No quotes found</string>
+    <string name="no_blog_found_message">No blogger found.</string>
+    <string name="no_news_found_message">No news or updates found.</string>
+    <string name="no_ideas_found_message">No ideas found.</string>
+    <string name="no_dreams_found_message">It seems like everyone is sleeping. No dreams found.</string>
+    <string name="no_question_found_message">No questions found.</string>
+    <string name="no_poem_found_message">No poet found till now.</string>
+    <string name="no_story_found_message">No story writer found.</string>
+    <string name="visit_profile">Visit profile</string>
+
+    <string name="report_post">Report post</string>
+    <string name="report_post_message">If you think that this post is disturbing you or is harmful to others, then please feel free to report it to our team so we can take proper action on it. Your identity will not be disclosed.</string>
+    <string name="post_details">Post Details</string>
+    <string name="post_owner">Post Owner \u2022</string>
+    <string name="content_type">Post Type \u2022</string>
+    <string name="post_id">Post ID \u2022</string>
+    <string name="create_report">Create Report</string>
+    <string name="post_not_suitable_message">This post is not suitable because</string>
+    <string name="your_report_here_hint">Your report here…</string>
+    <string name="reporting">Reporting…</string>
+    <string name="report_type_one">It\'s sexually explicit</string>
+    <string name="report_type_two">It\'s providing false information</string>
+    <string name="report_type_three">Post belongs to someone else or me</string>
+    <string name="report_type_four">It\'s harassing others or me</string>
+    <string name="report_type_five">It\'s threatening, violent or suicidal</string>
+    <string name="report_type_six">It\'s vulgar or using bad language</string>
+    <string name="report_type_seven">It\'s violating application policy</string>
+    <string name="report_type_eight">Connected me unnecessarily to this post</string>
+
+    <!--Writing upload fragment-->
+    <string name="show_post_preview">Show Preview</string>
+    <string name="write_your_quotes_and_thoughts">Your quotes and thoughts here…</string>
+    <string name="change_background">Change Background</string>
+
+    <string name="poem_title">Title</string>
+    <string name="poem_hint_title">title</string>
+
+    <string name="poem_author">Poet</string>
+    <string name="poem_hint_author">By…</string>
+
+    <string name="poem_Poem">Poem</string>
+    <string name="poem_hint_poem">Your poem here…</string>
+    <string name="poem_post_preview">Preview</string>
+
+    <string name="story_author">Author</string>
+
+    <string name="blog_title_hint">blog title here…</string>
+    <string name="blog_content">Content</string>
+    <string name="blog_content_hint">Your blog content goes here…</string>
+    <string name="blog_attach_images">Attach Images</string>
+    <string name="use_beta_writer">Beta Writer</string>
+
+    <string name="story_story">Story</string>
+    <string name="story_story_hint">Your story goes here…</string>
+
+    <string name="news_update_hint_title">title if any</string>
+    <string name="news_updates_text">News/Updates</string>
+    <string name="news_and_updates_hint_goes_here">Your news and updates goes here…</string>
+    <string name="news_updates_upload_images">Upload images</string>
+
+    <string name="give_a_question">Give a question</string>
+    <string name="ask_question_hint">Your question here…</string>
+
+    <string name="ideas_my_ideas">My Ideas</string>
+    <string name="ideas_hint">tell your ideas to Sakesnake users…</string>
+
+    <string name="dream_saw_a_dream">Saw a dream</string>
+    <string name="dream_message">Tell and check is your daily dreams matching with others.</string>
+    <string name="dreams_hint">today in my dream i saw a…</string>
+
+    <string name="upload_an_image">Upload an image</string>
+
+    <!-- function invitation fragment-->
+    <string name="type_of_function">Type of function</string>
+    <string name="name_of_function">Name of function</string>
+    <string name="function_location_venue">Function location/venue</string>
+    <string name="function_message_to_users">Message</string>
+    <string name="invite_sakesnake_users">Invite Sakesnake Users</string>
+    <string name="invited_users_will_appear_here">Invited users will appear here</string>
+    <string name="invite">Invite</string>
+
+
+    <!-- need help fragment-->
+    <string name="ask_for_help">Ask for help</string>
+    <string name="help_me">Help Me</string>
+
+
+    <!--    Beta writter fragment-->
+    <string name="beta_writer_fragment_toolbar_title">Beta Writer</string>
+    <string name="beta_writer_warning_error_message">This is not stable writer. May contain bugs or errors.</string>
+
+    <!-- Profile settings-->
+    <string name="profile_settings">Profile Settings</string>
+    <string name="this_account_is_verified_through_email">This account is verified through an email.</string>
+
+
+    <!-- Back4App Strings for connections -->
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id">tfJWFIJJ8hIK9uapdZOwBgPBhIoQ0U8MpVuGuq7K</string>
+    <string name="back4app_client_key">byrf9FBu58AcC8pVt4LifYmgWjBZJIMwnXXrjLLu</string>
+    <string name="sender_id">1029669369252</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

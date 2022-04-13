@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/feed_user_profile_photo_card_view"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="17.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/feed_user_profile_photo_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_photo_default_icon"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/feed_user_username_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="3dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@+id/feed_refresh_feed_image_view"
+        app:layout_constraintStart_toEndOf="@id/feed_user_profile_photo_card_view"
+        app:layout_constraintTop_toTopOf="@id/feed_user_profile_photo_card_view" />
+
+    <TextView
+        android:id="@+id/feed_user_posting_time_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        android:textColor="@color/touch_background_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:maxLines="1"
+        android:text="@string/posted_timing"
+        app:layout_constraintEnd_toEndOf="@id/feed_user_username_text_view"
+        app:layout_constraintStart_toStartOf="@id/feed_user_username_text_view"
+        app:layout_constraintTop_toBottomOf="@id/feed_user_username_text_view"/>
+
+    <ImageView
+        android:id="@+id/feed_refresh_feed_image_view"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/feed_user_posting_time_text_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="3dp"
+        android:src="@drawable/more_options_icon"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/feed_main_content_holder_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:maxHeight="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feed_user_posting_time_text_view"
+        android:layout_marginTop="10dp">
+
+        <!-- This background color will be generated randomly if no image available -->
+        <ImageView
+            android:id="@+id/background_color_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:alpha="0.7"
+            android:background="@color/card_view_color_on_top_of_background"/>
+
+        <ImageView
+            android:id="@+id/feed_quote_image_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/quote_icon"
+            app:layout_constraintBottom_toTopOf="@+id/feed_user_quote_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="15dp"/>
+
+        <ImageView
+            android:id="@+id/feed_inverted_quote_image_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:rotation="180"
+            android:scaleType="fitXY"
+            android:src="@drawable/quote_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feed_user_quote_text_view"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/feed_user_quote_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/feed_inverted_quote_image_view"
+            app:layout_constraintStart_toEndOf="@+id/feed_quote_image_view"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:maxLines="10" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <include
+        layout="@layout/more_about_image_quotes_content"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/feed_main_content_holder_constraint_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

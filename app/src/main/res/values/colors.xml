@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_black">#000000</color>
+    <color name="toolbar_color">#181818</color>
+    <color name="background_color">#121212</color>
+    <color name="touch_background_color">#A19797</color>
+    <color name="light_white_color">#B6B3B3</color>
+    <color name="blue_color">#039BE5</color>
+    <color name="red_color">#E50303</color>
+    <color name="upload_logo_color">#2fb55a</color>
+    <color name="profile_white_color">#F8F8FF</color>
+    <color name="empty_photo_background_color">#edf5e1</color>
+    <color name="small_text_view_grey_color">#95999c</color>
+    <color name="card_view_color_on_top_of_background">#3A3A3A</color>
+    <color name="security_save_btn_color">#3282b8</color>
+    <color name="warning_color">#FFC107</color>
+    <color name="light_upload_color">#368C52</color>
+
+    <!-- search fragment color-->
+    <color name="blue_thoughts_and_quotes">#1E90FF</color>
+    <color name="green_sake_snake_best">#4cbb17</color>
+    <color name="red_help_people">#ff2e2e</color>
+    <color name="light_red_color">#F35B5B</color>
+    <color name="orange_memes_and_comedy">#ffb429</color>
+    <color name="yellow_ideas">#ffff38</color> <!-- Done -->
+    <color name="purple_light">#9B30FF</color>
+    <color name="voilet_story">#8A2BE2</color> <!-- Done -->
+    <color name="brown_give_them_answer">#A0522D</color> <!-- Done -->
+    <color name="pink_poems">#FF69B4</color> <!-- Done -->
+    <color name="green_motivate_yourself">#32CD32</color> <!-- Done -->
+    <color name="purple_top_profile">#9932CC</color> <!-- Done -->
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".signup.emailsignup.SignUpGetNameFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/get_original_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            app:cardBackgroundColor="@color/background_color"
+            app:cardCornerRadius="6dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp">
+
+            <EditText
+                android:id="@+id/get_name_fragment_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/background_color"
+                android:cursorVisible="true"
+                android:hint="@string/get_original_name_hint"
+                android:inputType="textPersonName"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/touch_background_color"
+                android:textCursorDrawable="@color/touch_background_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/get_name_fragment_account_verified_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/get_name_fragment_image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/get_name_fragment_back_to_login_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="15dp"
+        android:textSize="15sp"
+        android:textColor="@color/upload_logo_color"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="@string/go_back_to_login_screen"/>
+
+    <ProgressBar
+        android:id="@+id/get_name_fragment_progress_bar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/get_name_fragment_back_to_login_text_view"
+        app:layout_constraintStart_toEndOf="@+id/get_name_fragment_back_to_login_text_view"
+        app:layout_constraintTop_toTopOf="@+id/get_name_fragment_back_to_login_text_view"
+        android:layout_marginStart="5dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:indeterminateTint="@color/upload_logo_color"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

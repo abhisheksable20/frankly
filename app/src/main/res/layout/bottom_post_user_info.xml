@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom_profile_user_card_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/bottom_profile_user_username_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_profile_user_post_created_at_text_view">
+
+        <ImageView
+            android:id="@+id/bottom_post_user_profile_pic_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/profile_photo_default_icon"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/bottom_profile_user_username_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bottom_profile_user_card_view"
+        android:layout_marginStart="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textAlignment="viewStart"/>
+
+    <TextView
+        android:id="@+id/bottom_profile_user_post_created_at_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bottom_profile_user_username_text_view"
+        app:layout_constraintStart_toEndOf="@id/bottom_profile_user_card_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="3dp"
+        android:maxLines="1"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        android:textColor="@color/touch_background_color"
+        android:textStyle="normal"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

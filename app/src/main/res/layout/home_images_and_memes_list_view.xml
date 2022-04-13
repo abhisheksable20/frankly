@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_image_or_meme_root_constraint_layout"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:layout_gravity="center"
+    android:layout_marginEnd="10dp">
+
+    <ImageView
+        android:id="@+id/home_images_and_memes_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:background="@color/card_view_color_on_top_of_background"/>
+
+    <include
+        layout="@layout/bottom_post_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_images_and_memes_image_view"
+        android:layout_marginTop="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

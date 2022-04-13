@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".home.postfeeds.QuotesFeedFragment">
+
+    <Toolbar
+        android:id="@+id/quotes_feed_fragment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/toolbar_color"
+        android:navigationIcon="@drawable/back_navigation_icon"
+        android:titleTextColor="@color/white"
+        android:title="@string/quotes_and_thought_home_fragment"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quotes_feed_fragment_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quotes_feed_fragment_toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

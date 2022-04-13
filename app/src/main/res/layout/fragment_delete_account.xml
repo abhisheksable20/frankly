@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    android:overScrollMode="never"
+    android:orientation="vertical"
+    tools:context=".home.bottomnavprofile.settings.accountSettings.DeleteAccountFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/delete_account_fragment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="@drawable/back_navigation_icon"
+            app:title="@string/profile_settings_fragment_delete_account"
+            app:titleTextColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/delete_account_vector"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:lineSpacingExtra="0.5dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/delete_account_msg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:text="@string/security_settings_current_password"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/card_view_color_on_top_of_background"
+            app:cardCornerRadius="5dp">
+
+            <EditText
+                android:id="@+id/current_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:backgroundTint="@color/card_view_color_on_top_of_background"
+                android:padding="3dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:inputType="textPassword"
+                android:hint="@string/security_settings_current_password"
+                android:textColorHint="@color/touch_background_color"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="@string/reason_heading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:textColor="@color/touch_background_color"
+            android:text="@string/reason_explain"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/card_view_color_on_top_of_background">
+
+            <EditText
+                android:id="@+id/account_delete_reason_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:backgroundTint="@color/card_view_color_on_top_of_background"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:textSize="13sp"
+                android:gravity="top|start"
+                android:lineSpacingExtra="0.5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:hint="@string/delete_reason_hint"
+                android:textColorHint="@color/touch_background_color"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/delete_account_permanently_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/red_help_people"
+            android:textColor="@color/white"
+            android:text="@string/delete_account_permanently"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

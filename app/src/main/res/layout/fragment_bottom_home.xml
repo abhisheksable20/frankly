@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_feed_swipe_to_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.bottomnavhome.BottomHomeFragment"
+    android:background="@color/background_color">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottom_home_nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="0dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/home_fragment_username_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/home_fragment_username_text_view"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/touch_background_color"
+                    android:text="@string/people_you_like_have_something_for_you"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Image Or Memes feed content -->
+            <ViewStub
+                android:id="@+id/home_images_or_memes_view_stub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/home_feed_images_or_memes"/>
+
+
+            <!-- Dreams Or Ideas feed content -->
+            <ViewStub
+                android:id="@+id/home_dreams_or_ideas_view_stub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/home_feed_dream_or_ideas"/>
+
+            <!-- Blog Or News feed content -->
+            <ViewStub
+                android:id="@+id/home_blogs_or_news_view_stub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/home_feed_blogs_or_news"/>
+
+            <!-- Quotes Or Question feed content -->
+            <ViewStub
+                android:id="@+id/home_quotes_or_question_view_stub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/home_feed_quotes_or_questions"/>
+
+            <!-- Story Or Poem feed content -->
+            <ViewStub
+                android:id="@+id/home_story_or_poem_view_stub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/home_feed_story_or_poem"/>
+
+            <!--        No Content available placeholder  -->
+            <ViewStub
+                android:id="@+id/home_feed_no_content_view_stub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/home_feed_no_content"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

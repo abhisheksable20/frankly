@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/full_app_navigation"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.sakesnake.frankly.splashscreen.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_signUpScreenFragment"
+            app:destination="@id/signUpScreenFragment"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_signUpGetNameFragment"
+            app:destination="@id/signUpGetNameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popUpTo="@id/signUpGetNameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpScreenFragment"
+        android:name="com.sakesnake.frankly.signup.SignUpScreenFragment"
+        android:label="fragment_sign_up_screen"
+        tools:layout="@layout/fragment_sign_up_screen" >
+        <action
+            android:id="@+id/action_signUpScreenFragment_to_emailSignUpFragment"
+            app:destination="@id/emailSignUpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_signUpScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailSignUpFragment"
+        android:name="com.sakesnake.frankly.signup.emailsignup.EmailSignUpFragment"
+        android:label="fragment_email_sign_up"
+        tools:layout="@layout/fragment_email_sign_up" >
+        <action
+            android:id="@+id/action_emailSignUpFragment_to_signUpGetUsernameFragment"
+            app:destination="@id/signUpGetUsernameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_emailSignUpFragment_to_appPoliciesFragment2"
+            app:destination="@id/appPoliciesFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.sakesnake.frankly.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/signUpScreenFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpGetNameFragment"
+            app:destination="@id/signUpGetNameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpGetUsernameFragment"
+        android:name="com.sakesnake.frankly.signup.emailsignup.SignUpGetUsernameFragment"
+        android:label="fragment_sign_up_get_username"
+        tools:layout="@layout/fragment_sign_up_get_username" >
+        <action
+            android:id="@+id/action_signUpGetUsernameFragment_to_signUpGetPasswordFragment"
+            app:destination="@id/signUpGetPasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpGetPasswordFragment"
+        android:name="com.sakesnake.frankly.signup.emailsignup.SignUpGetPasswordFragment"
+        android:label="fragment_sign_up_get_password"
+        tools:layout="@layout/fragment_sign_up_get_password" >
+        <action
+            android:id="@+id/action_signUpGetPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/emailSignUpFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signUpGetPasswordFragment_to_signUpScreenFragment"
+            app:destination="@id/signUpScreenFragment"
+            app:popUpTo="@id/emailSignUpFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sakesnake.frankly.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <include app:graph="@navigation/bottom_view_navigation" />
+    <fragment
+        android:id="@+id/signUpGetNameFragment"
+        android:name="com.sakesnake.frankly.signup.emailsignup.SignUpGetNameFragment"
+        android:label="fragment_sign_up_get_name"
+        tools:layout="@layout/fragment_sign_up_get_name" >
+        <action
+            android:id="@+id/action_signUpGetNameFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/signUpGetNameFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signUpGetNameFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/signUpGetNameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.sakesnake.frankly.login.forgetpassword.ForgetPasswordFragment"
+        android:label="fragment_forget_password"
+        tools:layout="@layout/fragment_forget_password" />
+    <fragment
+        android:id="@+id/appPoliciesFragment2"
+        android:name="com.sakesnake.frankly.home.bottomnavprofile.settings.accountSettings.AppPoliciesFragment"
+        android:label="fragment_app_policies"
+        tools:layout="@layout/fragment_app_policies" />
+</navigation>

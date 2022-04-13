@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Colors arrays-->
+    <integer-array name="colors">
+        <item>@color/black</item>
+        <item>@color/blue_color</item>
+        <item>@color/blue_thoughts_and_quotes</item>
+        <item>@color/brown_give_them_answer</item>
+        <item>@color/card_view_color_on_top_of_background</item>
+        <item>@color/empty_photo_background_color</item>
+        <item>@color/green_sake_snake_best</item>
+        <item>@color/orange_memes_and_comedy</item>
+        <item>@color/light_white_color</item>
+        <item>@color/pink_poems</item>
+        <item>@color/purple_200</item>
+        <item>@color/purple_500</item>
+        <item>@color/purple_700</item>
+        <item>@color/purple_light</item>
+        <item>@color/purple_top_profile</item>
+        <item>@color/red_color</item>
+        <item>@color/red_help_people</item>
+        <item>@color/security_save_btn_color</item>
+        <item>@color/teal_200</item>
+        <item>@color/teal_700</item>
+        <item>@color/warning_color</item>
+        <item>@color/yellow_ideas</item>
+        <item>@color/upload_logo_color</item>
+    </integer-array>
+
+<!--    Beta writer with underline-->
+    <string name="beta_writer_underline">
+        <u>Beta Writer</u>
+    </string>
+
+</resources>

@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_view_navigation"
+    app:startDestination="@id/bottomHomeFragment">
+
+    <fragment
+        android:id="@+id/bottomHomeFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavhome.BottomHomeFragment"
+        android:label="fragment_bottom_home"
+        tools:layout="@layout/fragment_bottom_home" >
+        <action
+            android:id="@+id/action_bottomHomeFragment_to_blogOrNewsFullFeedFragment"
+            app:destination="@id/blogOrNewsFullFeedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomHomeFragment_to_dreamOrIdeasFullFragment"
+            app:destination="@id/dreamOrIdeasFullFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomHomeFragment_to_poemFeedFullFragment"
+            app:destination="@id/poemFeedFullFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomHomeFragment_to_storyFeedFullFragment"
+            app:destination="@id/storyFeedFullFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomHomeFragment_to_writingFeedsFragment"
+            app:destination="@id/writingFeedsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomHomeFragment_to_imagesFeedFragment"
+            app:destination="@id/imagesFeedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomHomeFragment_to_bottomProfileFragment"
+            app:destination="@id/bottomProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomHomeFragment_to_usersProfileFragment"
+            app:destination="@id/usersProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomHomeFragment_to_writingUploadFragment"
+            app:destination="@id/writingUploadFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomHomeFragment_to_mobileImagesFragment"
+            app:destination="@id/mobileImagesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomHomeFragment_to_questionsFeedFragment"
+            app:destination="@id/questionsFeedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottomSearchFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavsearch.BottomSearchFragment"
+        android:label="fragment_bottom_search"
+        tools:layout="@layout/fragment_bottom_search" >
+        <action
+            android:id="@+id/action_bottomSearchFragment_to_smartSearchFragment"
+            app:destination="@id/smartSearchFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomSearchFragment_to_searchProfileFragment"
+            app:destination="@id/searchProfileFragment" />
+        <action
+            android:id="@+id/action_bottomSearchFragment_to_writingFeedsFragment"
+            app:destination="@id/writingFeedsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomSearchFragment_to_imagesFeedFragment"
+            app:destination="@id/imagesFeedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottomProfileFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavprofile.BottomProfileFragment"
+        android:label="fragment_bottom_profile"
+        tools:layout="@layout/fragment_bottom_profile" >
+        <action
+            android:id="@+id/action_bottomProfileFragment_to_profileSettingsFragment"
+            app:destination="@id/profileSettingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomProfileFragment_to_writingFeedsFragment"
+            app:destination="@id/writingFeedsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomProfileFragment_to_imagesFeedFragment"
+            app:destination="@id/imagesFeedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomProfileFragment_to_profileSupportersFragment"
+            app:destination="@id/profileSupportersFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomProfileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottomUploadFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavupload.BottomUploadFragment"
+        android:label="fragment_bottom_upload"
+        tools:layout="@layout/fragment_bottom_upload" >
+        <action
+            android:id="@+id/action_bottomUploadFragment_to_mobileImagesFragment"
+            app:destination="@id/mobileImagesFragment" />
+        <action
+            android:id="@+id/action_bottomUploadFragment_to_writingUploadFragment"
+            app:destination="@id/writingUploadFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomUploadFragment_to_functionInvitationFragment"
+            app:destination="@id/functionInvitationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_bottomUploadFragment_to_needHelpFragment"
+            app:destination="@id/needHelpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/mobileImagesFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavupload.imageupload.MobileImagesFragment"
+        android:label="fragment_mobile_images"
+        tools:layout="@layout/fragment_mobile_images" >
+        <action
+            android:id="@+id/action_mobileImagesFragment_to_selectedImageFragment"
+            app:destination="@id/selectedImageFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedImageFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavupload.imageupload.SelectedImageFragment"
+        android:label="fragment_selected_image"
+        tools:layout="@layout/fragment_selected_image" >
+        <action
+            android:id="@+id/action_selectedImageFragment_to_bottomHomeFragment"
+            app:destination="@id/bottomHomeFragment"
+            app:popUpTo="@id/selectedImageFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_selectedImageFragment_to_postPreviewFragment"
+            app:destination="@id/postPreviewFragment"
+            app:enterAnim="@anim/pull_up"
+            app:popExitAnim="@anim/push_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSettingsFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavprofile.settings.ProfileSettingsFragment"
+        android:label="fragment_profile_settings"
+        tools:layout="@layout/fragment_profile_settings" >
+        <action
+            android:id="@+id/action_profileSettingsFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileSettingsFragment_to_activeSessionFragment"
+            app:destination="@id/activeSessionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_profileSettingsFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_profileSettingsFragment_to_reportBugsFragment"
+            app:destination="@id/reportBugsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_profileSettingsFragment_to_deleteAccountFragment"
+            app:destination="@id/deleteAccountFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_profileSettingsFragment_to_appPoliciesFragment"
+            app:destination="@id/appPoliciesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/writingUploadFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavupload.writingupload.WritingUploadFragment"
+        android:label="fragment_writing_upload"
+        tools:layout="@layout/fragment_writing_upload" >
+        <action
+            android:id="@+id/action_writingUploadFragment_to_multiImageFragment"
+            app:destination="@id/multiImageFragment"
+            app:enterAnim="@anim/pull_up"
+            app:popExitAnim="@anim/push_down"
+            app:popUpTo="@id/writingUploadFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_writingUploadFragment_to_betaWriterFragment"
+            app:destination="@id/betaWriterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_writingUploadFragment_to_mobileImagesFragment"
+            app:destination="@id/mobileImagesFragment"
+            app:enterAnim="@anim/pull_up"
+            app:popExitAnim="@anim/push_down" />
+        <action
+            android:id="@+id/action_writingUploadFragment_to_bottomHomeFragment"
+            app:destination="@id/bottomHomeFragment"
+            app:popUpTo="@id/writingUploadFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_writingUploadFragment_to_postPreviewFragment"
+            app:destination="@id/postPreviewFragment"
+            app:enterAnim="@anim/pull_up"
+            app:popExitAnim="@anim/push_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/multiImageFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavupload.multiimageselector.MultiImageFragment"
+        android:label="fragment_multi_image"
+        tools:layout="@layout/fragment_multi_image" />
+    <fragment
+        android:id="@+id/smartSearchFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavsearch.smartsearch.SmartSearchFragment"
+        android:label="fragment_smart_search"
+        tools:layout="@layout/fragment_smart_search" />
+    <fragment
+        android:id="@+id/searchProfileFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavsearch.searchprofiles.SearchProfileFragment"
+        android:label="fragment_search_profile"
+        tools:layout="@layout/fragment_search_profile" >
+        <action
+            android:id="@+id/action_searchProfileFragment_to_usersProfileFragment"
+            app:destination="@id/usersProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavprofile.settings.accountSettings.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_mobileImagesFragment"
+            app:destination="@id/mobileImagesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/functionInvitationFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavupload.functioninvitation.FunctionInvitationFragment"
+        android:label="fragment_function_invitation"
+        tools:layout="@layout/fragment_function_invitation" />
+    <fragment
+        android:id="@+id/needHelpFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavupload.needhelp.NeedHelpFragment"
+        android:label="fragment_need_help"
+        tools:layout="@layout/fragment_need_help" />
+    <fragment
+        android:id="@+id/betaWriterFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavupload.writingupload.betawritter.BetaWriterFragment"
+        android:label="fragment_beta_writer"
+        tools:layout="@layout/fragment_beta_writer" />
+    <fragment
+        android:id="@+id/blogOrNewsFullFeedFragment"
+        android:name="com.sakesnake.frankly.home.postfeeds.BlogOrNewsFullFeedFragment"
+        android:label="fragment_blog_or_news_full_feed"
+        tools:layout="@layout/fragment_blog_or_news_full_feed" >
+        <action
+            android:id="@+id/action_blogOrNewsFullFeedFragment_to_postCommentsFragment"
+            app:destination="@id/postCommentsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_blogOrNewsFullFeedFragment_to_postLikesFragment"
+            app:destination="@id/postLikesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_blogOrNewsFullFeedFragment_to_bottomProfileFragment"
+            app:destination="@id/bottomProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_blogOrNewsFullFeedFragment_to_bottomProfileFragment2"
+            app:destination="@id/bottomProfileFragment" />
+        <action
+            android:id="@+id/action_blogOrNewsFullFeedFragment_to_usersProfileFragment"
+            app:destination="@id/usersProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_blogOrNewsFullFeedFragment_to_reportPostFragment"
+            app:destination="@id/reportPostFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/dreamOrIdeasFullFragment"
+        android:name="com.sakesnake.frankly.home.postfeeds.DreamOrIdeasFullFragment"
+        android:label="fragment_dream_or_ideas_full"
+        tools:layout="@layout/fragment_dream_or_ideas_full" >
+        <action
+            android:id="@+id/action_dreamOrIdeasFullFragment_to_postCommentsFragment"
+            app:destination="@id/postCommentsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dreamOrIdeasFullFragment_to_postLikesFragment"
+            app:destination="@id/postLikesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dreamOrIdeasFullFragment_to_bottomProfileFragment"
+            app:destination="@id/bottomProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dreamOrIdeasFullFragment_to_usersProfileFragment"
+            app:destination="@id/usersProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dreamOrIdeasFullFragment_to_reportPostFragment"
+            app:destination="@id/reportPostFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/poemFeedFullFragment"
+        android:name="com.sakesnake.frankly.home.postfeeds.PoemFeedFullFragment"
+        android:label="fragment_poem_feed_full"
+        tools:layout="@layout/fragment_poem_feed_full" >
+        <action
+            android:id="@+id/action_poemFeedFullFragment_to_postCommentsFragment"
+            app:destination="@id/postCommentsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_poemFeedFullFragment_to_postLikesFragment"
+            app:destination="@id/postLikesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_poemFeedFullFragment_to_bottomProfileFragment"
+            app:destination="@id/bottomProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_poemFeedFullFragment_to_usersProfileFragment"
+            app:destination="@id/usersProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_poemFeedFullFragment_to_reportPostFragment"
+            app:destination="@id/reportPostFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/storyFeedFullFragment"
+        android:name="com.sakesnake.frankly.home.postfeeds.StoryFeedFullFragment"
+        android:label="fragment_story_feed_full"
+        tools:layout="@layout/fragment_story_feed_full" >
+        <action
+            android:id="@+id/action_storyFeedFullFragment_to_postCommentsFragment"
+            app:destination="@id/postCommentsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_storyFeedFullFragment_to_postLikesFragment"
+            app:destination="@id/postLikesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_storyFeedFullFragment_to_bottomProfileFragment"
+            app:destination="@id/bottomProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_storyFeedFullFragment_to_usersProfileFragment"
+            app:destination="@id/usersProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_storyFeedFullFragment_to_reportPostFragment"
+            app:destination="@id/reportPostFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/postPreviewFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavupload.postpreview.PostPreviewFragment"
+        android:label="fragment_post_preview"
+        tools:layout="@layout/fragment_post_preview" />
+    <fragment
+        android:id="@+id/usersProfileFragment"
+        android:name="com.sakesnake.frankly.home.usersprofiledisplay.UsersProfileFragment"
+        android:label="fragment_users_profile"
+        tools:layout="@layout/fragment_users_profile" >
+        <action
+            android:id="@+id/action_usersProfileFragment_to_writingFeedsFragment"
+            app:destination="@id/writingFeedsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_usersProfileFragment_to_imagesFeedFragment"
+            app:destination="@id/imagesFeedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_usersProfileFragment_to_profileSupportersFragment"
+            app:destination="@id/profileSupportersFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/writingFeedsFragment"
+        android:name="com.sakesnake.frankly.home.postfeeds.allPostFeeds.WritingFeedsFragment"
+        android:label="fragment_writing_feed"
+        tools:layout="@layout/fragment_writing_feed" >
+        <action
+            android:id="@+id/action_writingFeedsFragment_to_blogOrNewsFullFeedFragment"
+            app:destination="@id/blogOrNewsFullFeedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_writingFeedsFragment_to_dreamOrIdeasFullFragment"
+            app:destination="@id/dreamOrIdeasFullFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_writingFeedsFragment_to_poemFeedFullFragment"
+            app:destination="@id/poemFeedFullFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_writingFeedsFragment_to_storyFeedFullFragment"
+            app:destination="@id/storyFeedFullFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_writingFeedsFragment_to_usersProfileFragment"
+            app:destination="@id/usersProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_writingFeedsFragment_to_bottomProfileFragment"
+            app:destination="@id/bottomProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_writingFeedsFragment_to_questionsFeedFragment"
+            app:destination="@id/questionsFeedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/imagesFeedFragment"
+        android:name="com.sakesnake.frankly.home.postfeeds.allPostFeeds.ImagesFeedFragment"
+        android:label="fragment_images_feed"
+        tools:layout="@layout/fragment_images_feed" >
+        <action
+            android:id="@+id/action_imagesFeedFragment_to_bottomProfileFragment"
+            app:destination="@id/bottomProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_imagesFeedFragment_to_usersProfileFragment"
+            app:destination="@id/usersProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_imagesFeedFragment_to_postCommentsFragment"
+            app:destination="@id/postCommentsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_imagesFeedFragment_to_postLikesFragment"
+            app:destination="@id/postLikesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_imagesFeedFragment_to_reportPostFragment"
+            app:destination="@id/reportPostFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionsFeedFragment"
+        android:name="com.sakesnake.frankly.home.postfeeds.QuestionsFeedFragment"
+        android:label="fragment_questions_feed"
+        tools:layout="@layout/fragment_questions_feed" >
+        <action
+            android:id="@+id/action_questionsFeedFragment_to_postCommentsFragment"
+            app:destination="@id/postCommentsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_questionsFeedFragment_to_postLikesFragment"
+            app:destination="@id/postLikesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_questionsFeedFragment_to_bottomProfileFragment"
+            app:destination="@id/bottomProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_questionsFeedFragment_to_usersProfileFragment"
+            app:destination="@id/usersProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_questionsFeedFragment_to_reportPostFragment"
+            app:destination="@id/reportPostFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/postCommentsFragment"
+        android:name="com.sakesnake.frankly.home.postfeeds.postComments.PostCommentsFragment"
+        android:label="fragment_post_comments"
+        tools:layout="@layout/fragment_post_comments" >
+        <action
+            android:id="@+id/action_postCommentsFragment_to_usersProfileFragment"
+            app:destination="@id/usersProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_postCommentsFragment_to_bottomProfileFragment"
+            app:destination="@id/bottomProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/postLikesFragment"
+        android:name="com.sakesnake.frankly.home.postfeeds.postLikes.PostLikesFragment"
+        android:label="fragment_post_likes"
+        tools:layout="@layout/fragment_post_likes" >
+        <action
+            android:id="@+id/action_postLikesFragment_to_usersProfileFragment"
+            app:destination="@id/usersProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_postLikesFragment_to_bottomProfileFragment"
+            app:destination="@id/bottomProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSupportersFragment"
+        android:name="com.sakesnake.frankly.home.profileSupporters.ProfileSupportersFragment"
+        android:label="fragment_profile_supporters"
+        tools:layout="@layout/fragment_profile_supporters" >
+        <action
+            android:id="@+id/action_profileSupportersFragment_to_bottomProfileFragment"
+            app:destination="@id/bottomProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_profileSupportersFragment_to_usersProfileFragment"
+            app:destination="@id/usersProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/activeSessionFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavprofile.settings.accountSettings.ActiveSessionFragment"
+        android:label="fragment_active_session"
+        tools:layout="@layout/fragment_active_session" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavprofile.settings.accountSettings.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/reportBugsFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavprofile.settings.accountSettings.ReportBugsFragment"
+        android:label="fragment_report_bugs"
+        tools:layout="@layout/fragment_report_bugs" />
+    <fragment
+        android:id="@+id/deleteAccountFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavprofile.settings.accountSettings.DeleteAccountFragment"
+        android:label="fragment_delete_account"
+        tools:layout="@layout/fragment_delete_account" />
+    <fragment
+        android:id="@+id/appPoliciesFragment"
+        android:name="com.sakesnake.frankly.home.bottomnavprofile.settings.accountSettings.AppPoliciesFragment"
+        android:label="fragment_app_policies"
+        tools:layout="@layout/fragment_app_policies" />
+    <fragment
+        android:id="@+id/reportPostFragment"
+        android:name="com.sakesnake.frankly.home.postfeeds.reportPost.ReportPostFragment"
+        android:label="fragment_report_post"
+        tools:layout="@layout/fragment_report_post" />
+</navigation>

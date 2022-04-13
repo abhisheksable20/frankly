@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1029669369252",
+    "project_id": "frankly-a7180",
+    "storage_bucket": "frankly-a7180.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029669369252:android:932556ff260f5672257d31",
+        "android_client_info": {
+          "package_name": "com.sakesnake.frankly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029669369252-35ho77312g3tognoakvoejdfdrp06m0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv_wXktiVv_V67tTaR-5e7qWRKKCTpzJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029669369252-35ho77312g3tognoakvoejdfdrp06m0q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

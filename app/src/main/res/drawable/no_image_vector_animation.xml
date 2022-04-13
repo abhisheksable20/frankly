@@ -1,0 +1,93 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:name="path"
+                android:pathData="M 3.026 20.87 L 21.183 2.087"
+                android:strokeColor="@color/card_view_color_on_top_of_background"
+                android:strokeWidth="0.5"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:name="path_1"
+                android:pathData="M 4.174 17.843 L 3.965 2.817 L 18.887 2.922"
+                android:strokeColor="@color/card_view_color_on_top_of_background"
+                android:strokeWidth="0.4"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:name="path_2"
+                android:pathData="M 19.304 4.174 L 19.304 17.948 L 5.843 18.157"
+                android:strokeColor="@color/card_view_color_on_top_of_background"
+                android:strokeWidth="0.4"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:name="path_3"
+                android:pathData="M 5.739 17.948 L 6.678 20.035 L 18.052 18.052"
+                android:strokeColor="@color/card_view_color_on_top_of_background"
+                android:strokeWidth="0.4"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:name="path_4"
+                android:pathData="M 19.409 17.322 L 21.809 16.904 L 19.409 5.009"
+                android:strokeColor="@color/card_view_color_on_top_of_background"
+                android:strokeWidth="0.4"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:name="path_5"
+                android:pathData="M 17.843 2.817 L 17.322 0.73 L 5.948 2.713"
+                android:strokeColor="@color/card_view_color_on_top_of_background"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:name="path_6"
+                android:pathData="M 6.157 15.861 L 8.974 5.739 L 12.939 8.87"
+                android:strokeColor="@color/card_view_color_on_top_of_background"
+                android:strokeWidth="0.4"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:name="path_7"
+                android:pathData="M 14.087 9.704 L 15.548 10.957 L 17.53 8.243 L 18.365 14.817 L 8.974 14.817"
+                android:strokeColor="@color/card_view_color_on_top_of_background"
+                android:strokeWidth="0.4"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:name="path_8"
+                android:pathData="M 4.07 3.235 L 1.878 3.757 L 4.07 14.296"
+                android:strokeColor="@color/card_view_color_on_top_of_background"
+                android:strokeWidth="0.4"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:name="path_9"
+                android:pathData="M 17.843 2.817 L 17.322 0.73 L 5.948 2.713"
+                android:strokeColor="@color/card_view_color_on_top_of_background"
+                android:strokeWidth="0.4"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+        </vector>
+    </aapt:attr>
+    <target android:name="path">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="trimPathEnd"
+                android:duration="1000"
+                android:valueFrom="1"
+                android:valueTo="1"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+</animated-vector>

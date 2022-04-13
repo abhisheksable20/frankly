@@ -1,0 +1,67 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <group android:name="group">
+                <path
+                    android:name="path"
+                    android:pathData="M 18 16 L 18 11 C 18 7.93 16.36 5.36 13.5 4.68 L 13.5 4 C 13.5 3.17 12.83 2.5 12 2.5 C 11.17 2.5 10.5 3.17 10.5 4 L 10.5 4.68 C 7.63 5.36 6 7.92 6 11 L 6 16 L 4 18 L 4 19 L 20 19 L 20 18 L 18 16 Z"
+                    android:fillColor="@color/white"
+                    android:strokeLineCap="round"
+                    android:strokeLineJoin="round"/>
+                <path
+                    android:name="path_1"
+                    android:pathData="M 10.889 21.2 C 10.889 20.488 11.436 19.911 12.112 19.911 C 12.787 19.911 13.333 20.488 13.333 21.2 C 13.333 21.912 12.787 22.489 12.112 22.489 C 11.436 22.489 10.889 21.912 10.889 21.2 Z"
+                    android:fillColor="@color/white"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="path">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="fillColor"
+                    android:duration="250"
+                    android:valueFrom="@color/white"
+                    android:valueTo="@color/upload_logo_color"
+                    android:valueType="colorType"
+                    android:interpolator="@android:anim/accelerate_interpolator"/>
+                <objectAnimator
+                    android:propertyName="fillColor"
+                    android:startOffset="250"
+                    android:duration="250"
+                    android:valueFrom="@color/upload_logo_color"
+                    android:valueTo="@color/white"
+                    android:valueType="colorType"
+                    android:interpolator="@android:anim/linear_interpolator"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="path_1">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="fillColor"
+                    android:duration="250"
+                    android:valueFrom="@color/white"
+                    android:valueTo="@color/upload_logo_color"
+                    android:valueType="colorType"
+                    android:interpolator="@android:anim/accelerate_interpolator"/>
+                <objectAnimator
+                    android:propertyName="fillColor"
+                    android:startOffset="250"
+                    android:duration="250"
+                    android:valueFrom="@color/upload_logo_color"
+                    android:valueTo="@color/white"
+                    android:valueType="colorType"
+                    android:interpolator="@android:anim/linear_interpolator"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

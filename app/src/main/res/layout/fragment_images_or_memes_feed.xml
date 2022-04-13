@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.postfeeds.ImagesOrMemesFeedFragment"
+    android:background="@color/background_color">
+
+    <!-- Title of toolbar will be set programmatically -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/images_memes_feed_fragment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/toolbar_color"
+        app:navigationIcon="@drawable/back_navigation_icon"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/image_memes_feed_fragment_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/images_memes_feed_fragment_toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

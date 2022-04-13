@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarSize="0dp"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/blog_and_news_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/card_view_color_on_top_of_background"
+            app:cardCornerRadius="8dp">
+
+            <EditText
+                android:id="@+id/blog_and_news_get_blog_news_title_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/card_view_color_on_top_of_background"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@color/touch_background_color"
+                android:textColorHint="@color/touch_background_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/blog_and_news_content_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="300dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/card_view_color_on_top_of_background"
+            app:cardCornerRadius="8dp">
+
+            <EditText
+                android:id="@+id/blog_and_news_get_blog_news_content_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="300dp"
+                android:backgroundTint="@color/card_view_color_on_top_of_background"
+                android:gravity="start|top"
+                android:singleLine="false"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="0.5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:inputType="textMultiLine"
+                android:textCursorDrawable="@color/touch_background_color"
+                android:textColor="@color/white"
+                android:textColorHint="@color/touch_background_color"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/blog_and_news_beta_writer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:text="@string/beta_writer_underline"/>
+
+            <TextView
+                android:id="@+id/blog_and_news_attach_images_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/upload_logo_color"
+                android:textSize="15sp"
+                android:text="@string/blog_attach_images"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/blog_and_news_attached_images_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

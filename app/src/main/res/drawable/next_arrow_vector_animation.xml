@@ -1,0 +1,55 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:name="path_1"
+                android:pathData="M 2.087 12 C 2.087 6.352 6.524 1.774 12.001 1.774 C 17.475 1.774 21.913 6.352 21.913 12 C 21.913 17.647 17.475 22.226 12.001 22.226 C 6.524 22.226 2.087 17.649 2.087 12 Z"
+                android:fillColor="@color/white"/>
+            <path
+                android:name="path_2"
+                android:pathData="M 4 12 L 20 12 L 14 6 M 20 12 L 14 18"
+                android:strokeColor="@color/black"
+                android:strokeWidth="1"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <group android:name="group">
+                <path
+                    android:name="path"
+                    android:pathData="M 1.409 12.001 C 1.409 6.006 6.152 1.147 11.999 1.147 C 17.849 1.147 22.591 6.006 22.591 12.001 C 22.591 17.994 17.849 22.852 11.999 22.852 C 6.152 22.852 1.409 17.994 1.409 12.001 Z"
+                    android:strokeColor="@color/upload_logo_color"
+                    android:strokeWidth="1"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="path">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="trimPathEnd"
+                    android:duration="1000"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:repeatMode="restart"
+                    android:repeatCount="infinite"
+                    android:valueType="floatType"
+                    android:interpolator="@android:anim/linear_interpolator"/>
+                <objectAnimator
+                    android:propertyName="trimPathOffset"
+                    android:duration="1000"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:repeatMode="restart"
+                    android:repeatCount="infinite"
+                    android:valueType="floatType"
+                    android:interpolator="@android:anim/linear_interpolator"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

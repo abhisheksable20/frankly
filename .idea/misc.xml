@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/drawable/active_session_icon.xml" value="0.240625" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/drawable/bug_icon.xml" value="0.240625" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/drawable/change_password_icon.xml" value="0.240625" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/drawable/delete_account_vector.xml" value="0.240625" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/drawable/edit_profile_settings_icon.xml" value="0.240625" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/drawable/frankly_logo.xml" value="0.240625" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/drawable/privacy_policy_settings_icon.xml" value="0.240625" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/drawable/terms_of_service_icon.xml" value="0.240625" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/account_settings_list_item.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/attach_images_upload_item_list.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/attached_images_list_view.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/blogs_and_news.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/bottom_progress_bar.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/connected_users_item_list.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/connected_users_list_view.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/connected_users_recycler_list_view.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_active_session.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_app_permission.xml" value="0.17753623188405798" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_app_policies.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_beta_writer.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_blog_or_news_full_feed.xml" value="0.18931159420289856" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_bottom_home.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_bottom_profile.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_bottom_search.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_bottom_search_v2.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_change_password.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_delete_account.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_dream_or_ideas_full.xml" value="0.18931159420289856" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_edit_profile.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_email_sign_up.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_login.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_post_comments.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_post_more_info.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_profile_settings.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_profile_supporters.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_report_bugs.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_report_post.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_search_profile.xml" value="0.18931159420289856" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_sign_up_screen.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_splash_screen.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_suggestion_or_report_or_feature.xml" value="0.17753623188405798" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_users_profile.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_writing_feed.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/fragment_writing_upload.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/poem_and_story.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/report_types_list_view.xml" value="0.25" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/layout/supporters_list_item.xml" value="0.22447916666666667" />
+        <entry key="..\:/SakesnakeProjectV2/Sakesnake/importantProjects/app/src/main/res/menu/botttom_nav_menu.xml" value="0.22447916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

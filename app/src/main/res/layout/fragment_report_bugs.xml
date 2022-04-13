@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    tools:context=".home.bottomnavprofile.settings.accountSettings.ReportBugsFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/report_bug_fragment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="@drawable/back_navigation_icon"
+            app:titleTextColor="@color/white"
+            app:title="@string/profile_settings_report_a_bug"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:lineSpacingExtra="0.5dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:textAlignment="viewStart"
+            android:text="@string/bug_report_msg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="viewStart"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:text="@string/poem_title"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/card_view_color_on_top_of_background">
+
+            <EditText
+                android:id="@+id/bug_title_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/card_view_color_on_top_of_background"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="viewStart"
+                android:hint="@string/poem_hint_title"
+                android:textColorHint="@color/touch_background_color"
+                android:gravity="start|center"
+                android:maxLines="1"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textAlignment="viewStart"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="@string/bug_where"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:textAlignment="viewStart"
+            android:textColor="@color/touch_background_color"
+            android:text="@string/where_bug_msg"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/card_view_color_on_top_of_background"
+            app:cardCornerRadius="5dp">
+
+            <EditText
+                android:id="@+id/bug_location_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/card_view_color_on_top_of_background"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/white"
+                android:textAlignment="viewStart"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:hint="@string/bug_location_hint"
+                android:textColorHint="@color/touch_background_color"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="@string/bug_message"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/card_view_color_on_top_of_background">
+
+            <EditText
+                android:id="@+id/bug_message_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:backgroundTint="@color/card_view_color_on_top_of_background"
+                android:padding="5dp"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:lineSpacingExtra="0.5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:hint="@string/bug_msg_hint"
+                android:gravity="top|start"
+                android:textColorHint="@color/touch_background_color"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/send_bug_report_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/upload_logo_color"
+            android:textColor="@color/white"
+            android:text="@string/report_bug"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

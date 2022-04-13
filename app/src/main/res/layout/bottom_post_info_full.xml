@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="15dp"
+    app:cardBackgroundColor="@color/card_view_color_on_top_of_background"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/feed_like_user_post_image_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/like_user_post_icon"
+            app:layout_constraintEnd_toStartOf="@+id/feed_comment_user_post_image_view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/feed_total_likes_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/touch_background_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="@+id/feed_like_user_post_image_view"
+            app:layout_constraintStart_toStartOf="@+id/feed_like_user_post_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/feed_like_user_post_image_view" />
+
+        <ImageView
+            android:id="@+id/feed_comment_user_post_image_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/comment_user_post_icon"
+            app:layout_constraintEnd_toStartOf="@+id/feed_share_user_post_image_view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/feed_like_user_post_image_view"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/feed_total_comments_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/touch_background_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="@+id/feed_comment_user_post_image_view"
+            app:layout_constraintStart_toStartOf="@+id/feed_comment_user_post_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/feed_comment_user_post_image_view" />
+
+        <ImageView
+            android:id="@+id/feed_share_user_post_image_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/share_user_post_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/feed_comment_user_post_image_view"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/feed_share_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/touch_background_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="@string/share_post"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="@id/feed_share_user_post_image_view"
+            app:layout_constraintStart_toStartOf="@+id/feed_share_user_post_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/feed_share_user_post_image_view" />
+
+        <View
+            android:id="@+id/reaction_barrier"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/touch_background_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feed_total_comments_text_view" />
+
+        <TextView
+            android:id="@+id/feed_user_post_description_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="0.5dp"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reaction_barrier" />
+
+        <Button
+            android:id="@+id/feed_user_post_more_details_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/upload_logo_color"
+            android:text="@string/user_post_more_details"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/feed_user_post_description_text_view"/>
+
+        <ImageView
+            android:id="@+id/feed_connected_users_image_view"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/connections_icon"
+            app:layout_constraintStart_toStartOf="@+id/feed_user_post_more_details_button"
+            app:layout_constraintTop_toBottomOf="@+id/feed_user_post_more_details_button" />
+
+        <TextView
+            android:id="@+id/feed_total_connected_users_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/touch_background_color"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/feed_connected_users_image_view"
+            app:layout_constraintStart_toEndOf="@+id/feed_connected_users_image_view"
+            app:layout_constraintTop_toBottomOf="@id/feed_user_post_more_details_button" />
+
+
+        <ImageView
+            android:id="@+id/feed_user_post_location_image_view"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/location_of_post_icon"
+            app:layout_constraintStart_toEndOf="@+id/feed_total_connected_users_text_view"
+            app:layout_constraintTop_toTopOf="@+id/feed_connected_users_image_view" />
+
+        <TextView
+            android:id="@+id/feed_post_location_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/feed_user_post_location_image_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/feed_user_post_location_image_view"
+            app:layout_constraintTop_toTopOf="@+id/feed_user_post_location_image_view"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginEnd="3dp"
+            android:textStyle="bold"
+            android:textColor="@color/touch_background_color"
+            android:textAlignment="viewStart"
+            android:textSize="13sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
